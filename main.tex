@@ -1,0 +1,30 @@
+\documentclass[twocolumn]{report}
+
+% FONTS
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\renewcommand{\familydefault}{\sfdefault}
+
+% PACKAGES & FIELDS
+\input{packages}
+\input{fields/fields}
+
+% TITLE
+\title{Example Title}
+\author{45826984}
+\date{\today}
+
+\begin{document}
+    \maketitle
+
+    \tableofcontents
+
+    \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+    \chapter{Test}
+    \label{chap:Test}
+    \setcounter{page}{1}
+    \section{Yes}
+    \label{sec:Yes}
+
+\end{document}

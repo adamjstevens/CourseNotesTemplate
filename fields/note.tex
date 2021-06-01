@@ -1,0 +1,14 @@
+\newcounter{noteIndex}[section]
+
+\newenvironment{note}
+{
+    \refstepcounter{noteIndex}\par\medskip
+    \begin{center}
+    \begin{tcolorbox}[
+        colframe=black!75, 
+        title=Note \arabic{noteIndex},
+        width=0.9\linewidth]
+}{
+    \end{tcolorbox}
+    \end{center}
+}
