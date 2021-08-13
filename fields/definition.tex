@@ -1,0 +1,14 @@
+\newcounter{defnIndex}[section]
+
+\newenvironment{defn}[1]
+{
+    \refstepcounter{defnIndex}\par\medskip
+    \begin{center}
+    \begin{tcolorbox}[
+        colframe=yellow!40!black, 
+        title=Definition \thesection.\thedefnIndex: #1,
+        width=0.9\linewidth]
+}{
+    \end{tcolorbox}
+    \end{center}
+}
